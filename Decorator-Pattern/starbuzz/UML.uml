@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_3gTtII72EeKMH7KSq7eS8w">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_3kiF0I72EeKMH7KSq7eS8w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_3knlYY72EeKMH7KSq7eS8w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_3gy1UI72EeKMH7KSq7eS8w" name="headfirst">
+    <packagedElement xmi:type="uml:Package" xmi:id="_3g0DcI72EeKMH7KSq7eS8w" name="decorator">
+      <packagedElement xmi:type="uml:Package" xmi:id="_3g0DcY72EeKMH7KSq7eS8w" name="starbuzz">
+        <packagedElement xmi:type="uml:Class" xmi:id="_3g1RkI72EeKMH7KSq7eS8w" name="CondimentDecorator" isAbstract="true">
+          <generalization xmi:id="_3jhZMI72EeKMH7KSq7eS8w" general="_3hmGkI72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_3kiF0Y72EeKMH7KSq7eS8w" name="getDescription" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_3kiF0o72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hL24I72EeKMH7KSq7eS8w" name="Espresso">
+          <generalization xmi:id="_3knlYI72EeKMH7KSq7eS8w" general="_3hmGkI72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_3knlYo72EeKMH7KSq7eS8w" name="cost" visibility="public">
+            <ownedParameter xmi:id="_3knlY472EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hOTII72EeKMH7KSq7eS8w" name="Milk">
+          <generalization xmi:id="_3kqBoI72EeKMH7KSq7eS8w" general="_3g1RkI72EeKMH7KSq7eS8w"/>
+          <ownedAttribute xmi:id="_3krPwI72EeKMH7KSq7eS8w" name="beverage" visibility="package" type="_3hmGkI72EeKMH7KSq7eS8w" association="_3luYoI72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_3kr20I72EeKMH7KSq7eS8w" name="getDescription" visibility="public">
+            <ownedParameter xmi:id="_3kr20Y72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3ksd4I72EeKMH7KSq7eS8w" name="cost" visibility="public">
+            <ownedParameter xmi:id="_3ksd4Y72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hjDQI72EeKMH7KSq7eS8w" name="StarbuzzCoffee">
+          <ownedOperation xmi:id="_3kuTEI72EeKMH7KSq7eS8w" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_3kuTEY72EeKMH7KSq7eS8w" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3kuTEo72EeKMH7KSq7eS8w" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3kuTE472EeKMH7KSq7eS8w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hmGkI72EeKMH7KSq7eS8w" name="Beverage" isAbstract="true">
+          <ownedAttribute xmi:id="_3kx9cI72EeKMH7KSq7eS8w" name="description" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_3kx9cY72EeKMH7KSq7eS8w" value="Unknown Beverage"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_3kykgI72EeKMH7KSq7eS8w" name="getDescription" visibility="public">
+            <ownedParameter xmi:id="_3kykgY72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3kzyoI72EeKMH7KSq7eS8w" name="cost" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_3kzyoY72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hn7wI72EeKMH7KSq7eS8w" name="HouseBlend">
+          <generalization xmi:id="_3k0ZsI72EeKMH7KSq7eS8w" general="_3hmGkI72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_3k1AwI72EeKMH7KSq7eS8w" name="cost" visibility="public">
+            <ownedParameter xmi:id="_3k1AwY72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hpw8I72EeKMH7KSq7eS8w" name="Soy">
+          <generalization xmi:id="_3k1n0I72EeKMH7KSq7eS8w" general="_3g1RkI72EeKMH7KSq7eS8w"/>
+          <ownedAttribute xmi:id="_3k2O4I72EeKMH7KSq7eS8w" name="beverage" visibility="package" type="_3hmGkI72EeKMH7KSq7eS8w" association="_3lu_sI72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_3k3dAI72EeKMH7KSq7eS8w" name="getDescription" visibility="public">
+            <ownedParameter xmi:id="_3k3dAY72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3k4rII72EeKMH7KSq7eS8w" name="cost" visibility="public">
+            <ownedParameter xmi:id="_3k4rIY72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hsNMI72EeKMH7KSq7eS8w" name="Whip">
+          <generalization xmi:id="_3k55QI72EeKMH7KSq7eS8w" general="_3g1RkI72EeKMH7KSq7eS8w"/>
+          <ownedAttribute xmi:id="_3k6gUI72EeKMH7KSq7eS8w" name="beverage" visibility="package" type="_3hmGkI72EeKMH7KSq7eS8w" association="_3lu_so72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_3k7HYI72EeKMH7KSq7eS8w" name="getDescription" visibility="public">
+            <ownedParameter xmi:id="_3k7HYY72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3k8VgI72EeKMH7KSq7eS8w" name="cost" visibility="public">
+            <ownedParameter xmi:id="_3k8VgY72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hupcI72EeKMH7KSq7eS8w" name="Mocha">
+          <generalization xmi:id="_3k9joI72EeKMH7KSq7eS8w" general="_3g1RkI72EeKMH7KSq7eS8w"/>
+          <ownedAttribute xmi:id="_3k-xwI72EeKMH7KSq7eS8w" name="beverage" visibility="package" type="_3hmGkI72EeKMH7KSq7eS8w" association="_3lu_tI72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_3k__4I72EeKMH7KSq7eS8w" name="getDescription" visibility="public">
+            <ownedParameter xmi:id="_3k__4Y72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3lBOAI72EeKMH7KSq7eS8w" name="cost" visibility="public">
+            <ownedParameter xmi:id="_3lBOAY72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hzh8I72EeKMH7KSq7eS8w" name="Decaf">
+          <generalization xmi:id="_3lCcII72EeKMH7KSq7eS8w" general="_3hmGkI72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_3lCcIY72EeKMH7KSq7eS8w" name="cost" visibility="public">
+            <ownedParameter xmi:id="_3lCcIo72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3h1-MI72EeKMH7KSq7eS8w" name="DarkRoast">
+          <generalization xmi:id="_3lDqQI72EeKMH7KSq7eS8w" general="_3hmGkI72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_3lDqQY72EeKMH7KSq7eS8w" name="cost" visibility="public">
+            <ownedParameter xmi:id="_3lDqQo72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3luYoI72EeKMH7KSq7eS8w" memberEnd="_3krPwI72EeKMH7KSq7eS8w _3luYoY72EeKMH7KSq7eS8w">
+          <ownedEnd xmi:id="_3luYoY72EeKMH7KSq7eS8w" name="Milk" type="_3hOTII72EeKMH7KSq7eS8w" association="_3luYoI72EeKMH7KSq7eS8w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3lu_sI72EeKMH7KSq7eS8w" memberEnd="_3k2O4I72EeKMH7KSq7eS8w _3lu_sY72EeKMH7KSq7eS8w">
+          <ownedEnd xmi:id="_3lu_sY72EeKMH7KSq7eS8w" name="Soy" type="_3hpw8I72EeKMH7KSq7eS8w" association="_3lu_sI72EeKMH7KSq7eS8w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3lu_so72EeKMH7KSq7eS8w" memberEnd="_3k6gUI72EeKMH7KSq7eS8w _3lu_s472EeKMH7KSq7eS8w">
+          <ownedEnd xmi:id="_3lu_s472EeKMH7KSq7eS8w" name="Whip" type="_3hsNMI72EeKMH7KSq7eS8w" association="_3lu_so72EeKMH7KSq7eS8w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3lu_tI72EeKMH7KSq7eS8w" memberEnd="_3k-xwI72EeKMH7KSq7eS8w _3lu_tY72EeKMH7KSq7eS8w">
+          <ownedEnd xmi:id="_3lu_tY72EeKMH7KSq7eS8w" name="Mocha" type="_3hupcI72EeKMH7KSq7eS8w" association="_3lu_tI72EeKMH7KSq7eS8w"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

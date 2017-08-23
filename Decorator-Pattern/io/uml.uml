@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_7mWVcI72EeKMH7KSq7eS8w">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_7pGugI72EeKMH7KSq7eS8w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_7pJKwo72EeKMH7KSq7eS8w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_7pLnAI72EeKMH7KSq7eS8w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_7mam4I72EeKMH7KSq7eS8w" name="headfirst">
+    <packagedElement xmi:type="uml:Package" xmi:id="_7mam4Y72EeKMH7KSq7eS8w" name="decorator">
+      <packagedElement xmi:type="uml:Package" xmi:id="_7mbN8I72EeKMH7KSq7eS8w" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_7mzocI72EeKMH7KSq7eS8w" name="InputTest">
+          <ownedOperation xmi:id="_7pHVkI72EeKMH7KSq7eS8w" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_7pHVkY72EeKMH7KSq7eS8w" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7pHVko72EeKMH7KSq7eS8w" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7pHVk472EeKMH7KSq7eS8w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7m4g8I72EeKMH7KSq7eS8w" name="LowerCaseInputStream">
+          <generalization xmi:id="_7pJKwY72EeKMH7KSq7eS8w" general="_7pJKwI72EeKMH7KSq7eS8w"/>
+          <ownedOperation xmi:id="_7pJKw472EeKMH7KSq7eS8w" name="read" visibility="public">
+            <ownedParameter xmi:id="_7pJKxI72EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7pLnAY72EeKMH7KSq7eS8w" name="read" visibility="public">
+            <ownedParameter xmi:id="_7pLnAo72EeKMH7KSq7eS8w" name="b">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7pLnA472EeKMH7KSq7eS8w" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7pLnBI72EeKMH7KSq7eS8w"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_7pLnBY72EeKMH7KSq7eS8w" name="offset">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_7pLnBo72EeKMH7KSq7eS8w" name="len">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_7pLnB472EeKMH7KSq7eS8w" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_7oMIgI72EeKMH7KSq7eS8w" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_7oMIgY72EeKMH7KSq7eS8w" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7oMIgo72EeKMH7KSq7eS8w" name="*"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_7pJKwI72EeKMH7KSq7eS8w" name="FilterInputStream"/>
+</uml:Model>
